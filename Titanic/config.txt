@@ -1,0 +1,1 @@
+{"description": "This file holds all confguration settings for the current project", "basepath": "C:\\Users\\HP\\Titanic\\Titanic", "datapath": "C:\\Users\\HP\\Titanic\\Titanic\\data", "outputpath": "C:\\Users\\HP\\Titanic\\Titanic\\outputs", "modelpath": "C:\\Users\\HP\\Titanic\\Titanic\\outputs\\models"}
