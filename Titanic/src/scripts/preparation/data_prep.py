@@ -30,4 +30,22 @@ tit=pd.read_csv('titanic_train.csv')
 
 ds.structdata.describe(tit)
 
+#Display the misssing value from our dataset 
+ds.structdata.display_missing(tit)
+
+#separate label from data 
+label=tit.Survived 
+tit.drop(columns=['Survived','Name','PassengerId','Ticket','Cabin'],inplace=True, axis=1)
+
+tit.head()
+
+label
+
+#Encode all categorical features
+from sklearn.preprocessing import LabelEncoder
+lb=LabelEncoder()
+
+for col in tit.columns:
+    tit[col]=lb.fit_transform(tit[col])
+
 
